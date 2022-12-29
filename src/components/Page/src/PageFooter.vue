@@ -10,7 +10,7 @@
   </div>
 </template>
 
-<script setup lang="ts" name="PageFooter">
+<script setup lang="ts" name="PageFooter" inheritAttrs="false">
 import { useMenuSetting } from '@/hooks/setting/useMenuSetting'
 import { useDesign } from '@/hooks/web/useDesign'
 

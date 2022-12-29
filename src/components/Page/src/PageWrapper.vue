@@ -3,7 +3,7 @@
     <PageHeader
       :ghost="ghost"
       :title="title"
-      v-bind="omit($attrs, 'class')"
+      v-bind="omit(attrs, 'class')"
       ref="headerRef"
       v-if="getShowHeader"
     >
@@ -32,9 +32,18 @@
     </PageFooter>
   </div>
 </template>
-<script setup lang="ts" name="PageWrapper">
-import { CSSProperties, PropType, provide, useAttrs, useSlots } from 'vue'
-import { computed, watch, ref, unref } from 'vue'
+<script setup lang="ts" name="PageWrapper" inheritAttrs="false">
+import {
+  computed,
+  watch,
+  ref,
+  unref,
+  CSSProperties,
+  PropType,
+  provide,
+  useSlots,
+  useAttrs
+} from 'vue'
 import PageFooter from './PageFooter.vue'
 import { useDesign } from '@/hooks/web/useDesign'
 import { propTypes } from '@/utils/propTypes'
@@ -52,7 +61,7 @@ const props = defineProps({
     type: Object as PropType<CSSProperties>
   },
   contentBackground: propTypes.bool,
-  contentFullHeight: propTypes.bool.def(false),
+  contentFullHeight: propTypes.bool,
   contentClass: propTypes.string,
   fixedHeight: propTypes.bool,
   upwardSpace: propTypes.oneOfType([propTypes.number, propTypes.string]).def(0)

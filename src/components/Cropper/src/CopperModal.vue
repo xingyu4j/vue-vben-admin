@@ -110,7 +110,7 @@
     </div>
   </BasicModal>
 </template>
-<script setup lang="ts">
+<script lang="ts" setup name="CropperModal">
 import type { CropendResult, Cropper } from './typing'
 import { ref } from 'vue'
 import CropperImage from './Cropper.vue'
@@ -121,9 +121,9 @@ import { dataURLtoBlob } from '@/utils/file/base64Conver'
 import { isFunction } from '@/utils/is'
 import { useI18n } from '@/hooks/web/useI18n'
 
-const emit = defineEmits(['uploadSuccess', 'register'])
-
 type apiFunParams = { file: Blob; name: string; filename: string }
+
+const emit = defineEmits(['uploadSuccess', 'register'])
 
 const props = defineProps({
   circled: { type: Boolean, default: true },

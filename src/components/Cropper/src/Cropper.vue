@@ -10,17 +10,17 @@
     />
   </div>
 </template>
-<script setup lang="ts">
+<script lang="ts" setup name="CropperImage">
 import { CSSProperties, useAttrs } from 'vue'
 import { onMounted, ref, unref, computed, onUnmounted } from 'vue'
 import Cropper from 'cropperjs'
 import 'cropperjs/dist/cropper.css'
 import { useDesign } from '@/hooks/web/useDesign'
-import { useDebounceFn } from '@vueuse/shared'
-import src from 'resize-observer-polyfill'
+import { useDebounceFn } from '@vueuse/core'
 
 const emit = defineEmits(['cropend', 'ready', 'cropendError'])
 const attrs = useAttrs()
+
 type Options = Cropper.Options
 const defaultOptions: Options = {
   aspectRatio: 1,
@@ -57,6 +57,7 @@ const props = defineProps({
   imageStyle: { type: Object as PropType<CSSProperties>, default: () => ({}) },
   options: { type: Object as PropType<Options>, default: () => ({}) }
 })
+
 const imgElRef = ref<ElRef<HTMLImageElement>>()
 const cropper = ref<Nullable<Cropper>>()
 const isReady = ref(false)

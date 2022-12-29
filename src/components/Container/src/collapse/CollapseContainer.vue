@@ -22,7 +22,7 @@
     </div>
   </div>
 </template>
-<script setup lang="ts">
+<script setup lang="ts" inheritAttrs="false">
 import type { PropType } from 'vue'
 import { ref } from 'vue'
 import { isNil } from 'lodash-es'

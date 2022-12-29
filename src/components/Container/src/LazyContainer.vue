@@ -16,7 +16,7 @@
     </div>
   </transition-group>
 </template>
-<script setup lang="ts" name="LazyContainer">
+<script setup lang="ts" name="LazyContainer" inheritAttrs="false">
 import type { PropType } from 'vue'
 import { reactive, onMounted, ref, toRef, toRefs } from 'vue'
 import { Skeleton } from 'ant-design-vue'

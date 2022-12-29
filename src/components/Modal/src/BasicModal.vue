@@ -48,7 +48,7 @@
     </template>
   </Modal>
 </template>
-<script setup lang="ts" name="BasicModal">
+<script setup lang="ts" name="BasicModal" inheritAttrs="false">
 import type { ModalProps, ModalMethods } from './typing'
 import {
   computed,

@@ -28,7 +28,7 @@
     />
   </div>
 </template>
-<script setup lang="ts">
+<script lang="ts" setup>
 import { computed, CSSProperties, unref, ref, watchEffect, watch, PropType } from 'vue'
 import CopperModal from './CopperModal.vue'
 import { useDesign } from '@/hooks/web/useDesign'
@@ -37,17 +37,18 @@ import { useMessage } from '@/hooks/web/useMessage'
 import { useI18n } from '@/hooks/web/useI18n'
 import type { ButtonProps } from '@/components/Button'
 import Icon from '@/components/Icon'
-import { uploadApi } from '@/api/sys/upload'
 
 const emit = defineEmits(['update:value', 'change'])
+
 const props = defineProps({
   width: { type: [String, Number], default: '200px' },
   value: { type: String },
   showBtn: { type: Boolean, default: true },
   btnProps: { type: Object as PropType<ButtonProps> },
   btnText: { type: String, default: '' },
-  uploadApi: { type: Function as PropType<({ file: Blob, name: string }) => Promise<void>> }
+  uploadApi: { type: Function as PropType<({ file, name }) => Promise<void>> }
 })
+
 const sourceValue = ref(props.value || '')
 const { prefixCls } = useDesign('cropper-avatar')
 const [register, { openModal, closeModal }] = useModal()
@@ -116,7 +117,7 @@ defineExpose({ openModal: openModal.bind(null, true), closeModal })
     cursor: pointer;
     transition: opacity 0.4s;
 
-    ::v-deep(svg) {
+    :deep(svg) {
       margin: auto;
     }
   }

@@ -17,7 +17,7 @@
     </template>
   </Menu>
 </template>
-<script setup lang="ts" name="SimpleMenu">
+<script setup lang="ts" name="SimpleMenu" inheritAttrs="false">
 import type { MenuState } from './types'
 import type { Menu as MenuType } from '@/router/types'
 import type { RouteLocationNormalizedLoaded } from 'vue-router'

@@ -30,7 +30,7 @@
     </DrawerFooter>
   </Drawer>
 </template>
-<script setup lang="ts">
+<script setup lang="ts" inheritAttrs="false">
 import type { DrawerInstance, DrawerProps } from './typing'
 import type { CSSProperties } from 'vue'
 import { ref, computed, watch, unref, nextTick, toRaw, getCurrentInstance } from 'vue'

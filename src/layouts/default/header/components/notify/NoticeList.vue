@@ -5,7 +5,7 @@
         <ListItemMate>
           <template #title>
             <div class="title">
-              <Typography
+              <TypographyParagraph
                 @click="handleTitleClick(item)"
                 style="width: 100%; margin-bottom: 0 !important"
                 :style="{ cursor: isTitleClickable ? 'pointer' : '' }"
@@ -33,7 +33,7 @@
           <template #description>
             <div>
               <div class="description" v-if="item.description">
-                <Typography
+                <TypographyParagraph
                   style="width: 100%; margin-bottom: 0 !important"
                   :ellipsis="
                     $props.descRows && $props.descRows > 0
@@ -57,10 +57,12 @@
 import { computed, PropType, ref, watch, unref } from 'vue'
 import { ListItemType } from './data'
 import { useDesign } from '@/hooks/web/useDesign'
-import { List, ListItem, Avatar, Tag, Typography } from 'ant-design-vue'
+import { List, Avatar, Tag, Typography } from 'ant-design-vue'
 import { isNumber } from '@/utils/is'
 
+const ListItem = List.Item
 const ListItemMate = List.Item.Meta
+const TypographyParagraph = Typography.Paragraph
 
 const props = defineProps({
   list: {
@@ -134,7 +136,7 @@ function handleTitleClick(item: ListItemType) {
     display: none;
   }
 
-  ::v-deep(.ant-pagination-disabled) {
+  :deep(.ant-pagination-disabled) {
     display: inline-block !important;
   }
 
