@@ -3,7 +3,7 @@
 import { warn } from 'vue'
 import { isObject } from '@/utils/is'
 import { fromPairs } from 'lodash-es'
-import type { ExtractPropTypes, PropType } from 'vue'
+import type { ExtractPropTypes } from 'vue'
 import type { Mutable } from './types'
 
 const wrapperKey = Symbol()

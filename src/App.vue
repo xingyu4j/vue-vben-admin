@@ -1,5 +1,5 @@
 <template>
-  <ConfigProvider :locale="getAntdLocale">
+  <ConfigProvider :locale="getAntdLocale" :component-size="componentSize">
     <AppProvider>
       <RouterView />
     </AppProvider>
@@ -11,10 +11,16 @@ import { ConfigProvider } from 'ant-design-vue'
 import { AppProvider } from '@/components/Application'
 import { useTitle } from '@/hooks/web/useTitle'
 import { useLocale } from '@/locales/useLocale'
+import { useAppStore } from '@/store/modules/app'
 
 import 'dayjs/locale/zh-cn'
+import { computed } from 'vue'
 // support Multi-language
 const { getAntdLocale } = useLocale()
+
+const appStore = useAppStore()
+
+const componentSize = computed(() => appStore.getComponentSize)
 
 // Listening to page changes and dynamically changing site titles
 useTitle()

@@ -4,7 +4,7 @@
   </div>
 </template>
 <script setup lang="ts" name="QrCode">
-import { watch, PropType, ref, unref, onMounted } from 'vue'
+import { watch, ref, unref, onMounted } from 'vue'
 import { toCanvas, QRCodeRenderersOptions, LogoType } from './qrcodePlus'
 import { toDataURL } from 'qrcode'
 import { downloadByUrl } from '@/utils/file/download'

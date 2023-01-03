@@ -1,5 +1,4 @@
 <script lang="tsx">
-import type { PropType } from 'vue'
 import { Result, Button } from 'ant-design-vue'
 import { defineComponent, ref, computed, unref } from 'vue'
 import { ExceptionEnum } from '@/enums/exceptionEnum'

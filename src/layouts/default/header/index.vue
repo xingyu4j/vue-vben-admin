@@ -41,6 +41,8 @@
 
       <FullScreen v-if="getShowFullScreen" :class="`${prefixCls}-action__item fullscreen-item`" />
 
+      <AppSizePicker :showText="false" :class="`${prefixCls}-action__item`" />
+
       <AppLocalePicker
         v-if="getShowLocalePicker"
         :reload="true"
@@ -67,7 +69,7 @@ import { useMenuSetting } from '@/hooks/setting/useMenuSetting'
 import { useRootSetting } from '@/hooks/setting/useRootSetting'
 import { MenuModeEnum, MenuSplitTyeEnum } from '@/enums/menuEnum'
 import { SettingButtonPositionEnum } from '@/enums/appEnum'
-import { AppLocalePicker } from '@/components/Application'
+import { AppLocalePicker, AppSizePicker } from '@/components/Application'
 import { UserDropDown, LayoutBreadcrumb, FullScreen, Notify, ErrorAction } from './components'
 import { useAppInject } from '@/hooks/web/useAppInject'
 import { useDesign } from '@/hooks/web/useDesign'

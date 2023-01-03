@@ -31,7 +31,7 @@
   </div>
 </template>
 <script setup lang="ts" name="TableAction">
-import { PropType, computed, toRaw, unref } from 'vue'
+import { computed, toRaw, unref } from 'vue'
 import { MoreOutlined } from '@ant-design/icons-vue'
 import { Divider, Tooltip, TooltipProps } from 'ant-design-vue'
 import Icon from '@/components/Icon/index'
@@ -90,7 +90,6 @@ const getActions = computed(() => {
       return {
         getPopupContainer: () => unref((table as any)?.wrapRef.value) ?? document.body,
         type: 'link',
-        size: 'small',
         ...action,
         ...(popConfirm || {}),
         onConfirm: popConfirm?.confirm,

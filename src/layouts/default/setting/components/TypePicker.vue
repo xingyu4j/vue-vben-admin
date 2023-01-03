@@ -19,7 +19,6 @@
   </div>
 </template>
 <script setup lang="ts" name="MenuTypePicker">
-import { PropType } from 'vue'
 import { Tooltip } from 'ant-design-vue'
 import { useDesign } from '@/hooks/web/useDesign'
 import { menuTypeList } from '../enum'

@@ -11,7 +11,6 @@
   </div>
 </template>
 <script setup lang="ts" name="TableSetting">
-import type { PropType } from 'vue'
 import type { TableSetting, ColumnChangeParam } from '../../types/table'
 import { computed, unref } from 'vue'
 import ColumnSetting from './ColumnSetting.vue'

@@ -4,7 +4,7 @@
   </BasicTitle>
 </template>
 <script setup lang="ts" name="BasicTableTitle">
-import { computed, PropType } from 'vue'
+import { computed } from 'vue'
 import { BasicTitle } from '@/components/Basic/index'
 import { useDesign } from '@/hooks/web/useDesign'
 import { isFunction } from '@/utils/is'

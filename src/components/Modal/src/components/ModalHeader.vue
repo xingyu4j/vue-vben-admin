@@ -4,7 +4,6 @@
   </BasicTitle>
 </template>
 <script setup lang="ts" name="BasicModalHeader">
-import type { PropType } from 'vue'
 import { BasicTitle } from '@/components/Basic'
 
 defineProps({

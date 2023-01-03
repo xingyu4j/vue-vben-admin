@@ -24,7 +24,6 @@
 </template>
 <script setup lang="ts" name="BasicTableHeader">
 import type { TableSetting, ColumnChangeParam } from '../types/table'
-import type { PropType } from 'vue'
 import { Divider } from 'ant-design-vue'
 import TableSettingComponent from './settings/index.vue'
 import TableTitle from './TableTitle.vue'

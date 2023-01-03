@@ -5,7 +5,6 @@
 </template>
 
 <script setup lang="ts" name="Menu">
-import type { PropType } from 'vue'
 import type { SubMenuProvider } from './types'
 import {
   ref,

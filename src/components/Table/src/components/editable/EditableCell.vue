@@ -1,5 +1,5 @@
 <script lang="tsx">
-import type { CSSProperties, PropType } from 'vue'
+import type { CSSProperties } from 'vue'
 import { computed, defineComponent, nextTick, ref, toRaw, unref, watchEffect } from 'vue'
 import type { BasicColumn } from '../../types/table'
 import type { EditRecordRow } from './index'

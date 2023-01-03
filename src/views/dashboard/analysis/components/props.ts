@@ -1,5 +1,3 @@
-import { PropType } from 'vue'
-
 export interface BasicProps {
   width: string
   height: string

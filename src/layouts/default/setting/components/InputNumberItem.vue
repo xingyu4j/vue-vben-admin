@@ -10,7 +10,6 @@
   </div>
 </template>
 <script setup lang="ts" name="InputNumberItem">
-import { PropType } from 'vue'
 import { InputNumber } from 'ant-design-vue'
 import { useDesign } from '@/hooks/web/useDesign'
 import { baseHandler } from '../handler'

@@ -1,5 +1,5 @@
 <script lang="tsx">
-import type { PropType, CSSProperties } from 'vue'
+import type { CSSProperties } from 'vue'
 
 import { computed, defineComponent, unref, toRef } from 'vue'
 import { BasicMenu } from '@/components/Menu'

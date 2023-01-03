@@ -12,7 +12,6 @@
   />
 </template>
 <script setup lang="ts" name="BasicTableFooter">
-import type { PropType } from 'vue'
 import { unref, computed, toRaw } from 'vue'
 import { Table } from 'ant-design-vue'
 import { cloneDeep } from 'lodash-es'

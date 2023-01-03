@@ -14,7 +14,7 @@
   </RadioGroup>
 </template>
 <script setup lang="ts" name="ApiRadioGroup">
-import { PropType, ref, watchEffect, computed, unref, watch } from 'vue'
+import { ref, watchEffect, computed, unref, watch } from 'vue'
 import { Radio } from 'ant-design-vue'
 import { isFunction } from '@/utils/is'
 import { useRuleFormItem } from '@/hooks/component/useFormItem'

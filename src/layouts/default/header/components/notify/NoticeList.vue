@@ -54,7 +54,7 @@
   </List>
 </template>
 <script setup lang="ts">
-import { computed, PropType, ref, watch, unref } from 'vue'
+import { computed, ref, watch, unref } from 'vue'
 import { ListItemType } from './data'
 import { useDesign } from '@/hooks/web/useDesign'
 import { List, Avatar, Tag, Typography } from 'ant-design-vue'

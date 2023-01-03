@@ -5,7 +5,6 @@
 </template>
 <script setup lang="ts" name="FoldButton">
 import { unref, computed } from 'vue'
-import { Icon } from '@/components/Icon'
 import { useDesign } from '@/hooks/web/useDesign'
 import { useHeaderSetting } from '@/hooks/setting/useHeaderSetting'
 import { useMenuSetting } from '@/hooks/setting/useMenuSetting'

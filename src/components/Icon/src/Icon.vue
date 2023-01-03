@@ -14,7 +14,7 @@
   ></span>
 </template>
 <script setup lang="ts" name="Icon">
-import { PropType, useAttrs } from 'vue'
+import { useAttrs } from 'vue'
 import { ref, watch, onMounted, nextTick, unref, computed, CSSProperties } from 'vue'
 import SvgIcon from './SvgIcon.vue'
 import Iconify from '@purge-icons/generated'

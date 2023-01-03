@@ -19,7 +19,7 @@
   </Cascader>
 </template>
 <script setup lang="ts" name="ApiCascader">
-import { PropType, ref, unref, watch, watchEffect } from 'vue'
+import { ref, unref, watch, watchEffect } from 'vue'
 import { Cascader } from 'ant-design-vue'
 import { propTypes } from '@/utils/propTypes'
 import { isFunction } from '@/utils/is'

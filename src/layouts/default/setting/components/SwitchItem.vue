@@ -11,7 +11,7 @@
   </div>
 </template>
 <script setup lang="ts" name="SwitchItem">
-import { PropType, computed } from 'vue'
+import { computed } from 'vue'
 import { Switch } from 'ant-design-vue'
 import { useDesign } from '@/hooks/web/useDesign'
 import { useI18n } from '@/hooks/web/useI18n'

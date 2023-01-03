@@ -9,7 +9,6 @@
   </a-input>
 </template>
 <script setup lang="ts" name="CountDownInput" inheritAttrs="false">
-import { PropType } from 'vue'
 import CountButton from './CountButton.vue'
 import { useDesign } from '@/hooks/web/useDesign'
 import { useRuleFormItem } from '@/hooks/component/useFormItem'

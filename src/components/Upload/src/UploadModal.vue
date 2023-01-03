@@ -43,7 +43,7 @@
   </BasicModal>
 </template>
 <script setup lang="ts">
-import { ref, toRefs, unref, computed, PropType } from 'vue'
+import { ref, toRefs, unref, computed } from 'vue'
 import { Upload, Alert } from 'ant-design-vue'
 import { BasicModal, useModalInner } from '@/components/Modal'
 import { useUploadType } from './useUpload'

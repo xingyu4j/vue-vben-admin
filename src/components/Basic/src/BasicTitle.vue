@@ -5,7 +5,6 @@
   </span>
 </template>
 <script setup lang="ts">
-import type { PropType } from 'vue'
 import { useSlots, computed } from 'vue'
 import BasicHelp from './BasicHelp.vue'
 import { useDesign } from '@/hooks/web/useDesign'

@@ -1,0 +1,175 @@
+@prefix-cls: ~'@{namespace}-x-vxe-table';
+
+[data-theme='dark'] .@{prefix-cls} {
+  @fontColor: #fff;
+  @bgColor: #151515;
+  @borderColor: #606060;
+
+  .vxe-cell--item,
+  .vxe-cell--title,
+  .vxe-cell,
+  .vxe-body--expanded-cell {
+    color: @fontColor;
+  }
+
+  .vxe-toolbar {
+    background-color: @bgColor;
+  }
+
+  .vxe-table--render-default .vxe-table--body-wrapper,
+  .vxe-table--render-default .vxe-table--footer-wrapper {
+    background-color: @bgColor;
+  }
+
+  // 输入框
+  .vxe-input,
+  .vxe-input--inner {
+    color: @fontColor;
+    background-color: @bgColor;
+  }
+
+  .vxe-select,
+  .vxe-select-panel,
+  .vxe-select-option,
+  .vxe-select-option--wrapper,
+  .vxe-select-option--hover {
+    background-color: @bgColor;
+  }
+
+  .vxe-button--icon {
+    font-family: Verdana, Arial, Tahoma;
+    // background-color: #e5e7eb;
+  }
+
+  .vxe-button.size--medium.type--button.is--circle {
+    border: 0;
+  }
+
+  // 外边框
+  .vxe-table--render-default .vxe-table--border-line {
+    border-color: @borderColor;
+  }
+
+  // header 下边框
+  .vxe-table .vxe-table--header-wrapper .vxe-table--header-border-line {
+    border-bottom-color: @borderColor;
+  }
+
+  // footer 上边框
+  .vxe-table--render-default .vxe-table--footer-wrapper {
+    border-top-color: @borderColor;
+  }
+
+  // 展开行 边框
+  .vxe-table--render-default .vxe-body--expanded-column {
+    border-bottom-color: @borderColor;
+  }
+
+  // 行斑马纹
+  .vxe-table--render-default .vxe-body--row.row--stripe {
+    background-color: #1e1e1e;
+  }
+
+  // 行hover
+  .vxe-table--render-default .vxe-body--row.row--hover {
+    background-color: #262626;
+  }
+
+  // 选中行
+  .vxe-table--render-default .vxe-body--row.row--checked {
+    background-color: #44403a;
+
+    &.row--hover {
+      background-color: #59524b;
+    }
+  }
+
+  // pager
+
+  .vxe-pager,
+  .vxe-pager--perfect,
+  .vxe-pager--jump-prev,
+  .vxe-pager--jump-next,
+  .vxe-pager--sizes,
+  .vxe-pager--goto {
+    background-color: #262727;
+  }
+
+  .vxe-pager--next-btn,
+  .vxe-pager--prev-btn,
+  .vxe-pager--perfect-button {
+    background-color: #a7a3a3;
+  }
+
+  .vxe-table--empty-content,
+  .vxe-pager--jump,
+  .vxe-pager--total,
+  .vxe-pager--goto-text {
+    color: @fontColor;
+  }
+
+  .vxe-grid--form-wrapper,
+  .vxe-form--wrapper,
+  .vxe-form--item-content,
+  .vxe-input--inner,
+  .vxe-header--row {
+    background-color: #1d1d1d;
+  }
+
+  .vxe-form--item-title {
+    color: @fontColor;
+  }
+
+  .vxe-table--render-default.border--default .vxe-table--header-wrapper,
+  .vxe-table--render-default.border--full .vxe-table--header-wrapper,
+  .vxe-table--render-default.border--outer .vxe-table--header-wrapper {
+    background-color: #1d1d1d;
+  }
+
+  .vxe-table--render-default.border--default .vxe-body--column,
+  .vxe-table--render-default.border--default .vxe-footer--column,
+  .vxe-table--render-default.border--default .vxe-header--column,
+  .vxe-table--render-default.border--inner .vxe-body--column,
+  .vxe-table--render-default.border--inner .vxe-footer--column,
+  .vxe-table--render-default.border--inner .vxe-header--column {
+    background-image: linear-gradient(#1d1d1d, #1d1d1d);
+  }
+
+  // 列宽拖动
+  .vxe-header--column .vxe-resizable.is--line::before {
+    background-color: #505050;
+  }
+
+  // checkbox
+  .vxe-custom--option .vxe-checkbox--icon::before,
+  .vxe-export--panel-column-option .vxe-checkbox--icon::before,
+  .vxe-table--filter-option .vxe-checkbox--icon::before,
+  .vxe-table--render-default .vxe-cell--checkbox .vxe-checkbox--icon::before {
+    background-color: @bgColor;
+    border-color: @borderColor;
+  }
+
+  .vxe-toolbar .vxe-custom--option-wrapper {
+    background-color: @bgColor;
+  }
+
+  .vxe-button {
+    background-color: @bgColor;
+  }
+
+  .vxe-button--content {
+    color: @fontColor;
+  }
+
+  .vxe-button.type--button:not(.is--disabled):active {
+    background-color: @bgColor;
+  }
+
+  .vxe-toolbar .vxe-custom--wrapper.is--active > .vxe-button {
+    background-color: @bgColor;
+  }
+
+  .vxe-toolbar .vxe-custom--option-wrapper .vxe-custom--footer button {
+    color: @fontColor;
+  }
+}

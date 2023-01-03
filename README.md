@@ -2,19 +2,19 @@
 
 [![license](https://img.shields.io/github/license/xingyu4j/vue-vben-admin.svg)](LICENSE)
 
-<h1>Vue vben admin<更新到2022年12月27日></h1>
+<h1>Vue vben admin<更新到2023年01月01日></h1>
 </div>
 
 ## 简介
 
-Vue Vben Admin 是一个免费开源的中后台模版。
-本项目基于 vben2.8 版本，升级依赖，重构部分组件，重构代码样式，重构setup语法糖。
-使用了最新的`Vue3`,`Vite4`,`Antdv3`,`TypeScript`,`Pinia`等主流技术开发，开箱即用的中后台前端解决方案。
-下一步封装vxe-table，根据vxe-table搞一些常见的页面
+- Vue Vben Admin 是一个免费开源的中后台模版。
+- 本项目基于 vben2.8 版本，升级依赖，重构部分组件，重构代码样式，重构setup语法糖。
+- 使用了最新的`Vue3`,`Vite4`,`Antdv3`,`TypeScript`,`Pinia`等主流技术开发，开箱即用的中后台前端解决方案。
+- 封装 vxe-table 详见 系统管理-角色管理等(views/demo/system/...)
 
 ## 特性
 
-- **最新技术栈**：使用 Vue3/vite4/antdv3 等前端前沿技术开发
+- **最新技术栈**：使用 Vue3/vite4/antdv3/vxeTable 等前端前沿技术开发
 - **TypeScript**: 应用程序级 JavaScript 的语言
 - **主题**：可配置的主题
 - **国际化**：内置完善的国际化方案

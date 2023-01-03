@@ -43,7 +43,6 @@
   </SubMenu>
 </template>
 <script setup lang="ts" name="SimpleSubMenu">
-import type { PropType } from 'vue'
 import type { Menu } from '@/router/types'
 import { computed } from 'vue'
 import { useDesign } from '@/hooks/web/useDesign'

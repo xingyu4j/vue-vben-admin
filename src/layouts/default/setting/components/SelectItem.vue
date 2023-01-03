@@ -12,7 +12,7 @@
   </div>
 </template>
 <script setup lang="ts" name="SelectItem">
-import { PropType, computed } from 'vue'
+import { computed } from 'vue'
 import { Select } from 'ant-design-vue'
 import { useDesign } from '@/hooks/web/useDesign'
 import { baseHandler } from '../handler'

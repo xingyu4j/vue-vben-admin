@@ -12,6 +12,8 @@ import { CacheTypeEnum } from '@/enums/cacheEnum'
 
 export type LocaleType = 'zh_CN' | 'en' | 'ru' | 'ja' | 'ko'
 
+export type AppSizeType = 'small' | 'middle' | 'large'
+
 export interface MenuSetting {
   bgColor: string
   fixed: boolean
@@ -57,6 +59,16 @@ export interface HeaderSetting {
   // Show message center button
   showNotice: boolean
   showSearch: boolean
+}
+
+export interface SizeSetting {
+  showPicker: boolean
+  // Current size
+  size: AppSizeType
+  // default size
+  fallback: AppSizeType
+  // available size
+  availableSizes: AppSizeType[]
 }
 
 export interface LocaleSetting {

@@ -35,7 +35,6 @@
 <script setup lang="ts">
 import { computed, ref, watch, useSlots } from 'vue'
 import { Dropdown, Menu, MenuItem, MenuDivider, InputSearch } from 'ant-design-vue'
-import { Icon } from '@/components/Icon'
 import { BasicTitle } from '@/components/Basic'
 import { useI18n } from '@/hooks/web/useI18n'
 import { useDebounceFn } from '@vueuse/core'

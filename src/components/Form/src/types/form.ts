@@ -132,7 +132,7 @@ export interface FormSchema {
   // Variable name bound to v-model Default value
   valueField?: string
   // Label name
-  label: string | VNode
+  label?: string | VNode
   // Auxiliary text
   subLabel?: string
   // Help text on the right side of the text
@@ -147,7 +147,7 @@ export interface FormSchema {
   // Disable the adjustment of labelWidth with global settings of formModel, and manually set labelCol and wrapperCol by yourself
   disabledLabelWidth?: boolean
   // render component
-  component: ComponentType
+  component?: ComponentType
   // Component parameters
   componentProps?:
     | ((opt: {

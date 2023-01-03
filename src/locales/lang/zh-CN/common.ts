@@ -1,4 +1,6 @@
 export default {
+  index: '序号',
+  action: '操作',
   okText: '确认',
   closeText: '关闭',
   cancelText: '取消',

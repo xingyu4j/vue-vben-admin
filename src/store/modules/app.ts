@@ -3,7 +3,8 @@ import type {
   HeaderSetting,
   MenuSetting,
   TransitionSetting,
-  MultiTabsSetting
+  MultiTabsSetting,
+  AppSizeType
 } from '/#/config'
 import type { BeforeMiniState } from '/#/store'
 
@@ -25,6 +26,7 @@ interface AppState {
   projectConfig: ProjectConfig | null
   // When the window shrinks, remember some states, and restore these states when the window is restored
   beforeMiniInfo: BeforeMiniState
+  componentSize: 'small' | 'middle' | 'large' | undefined
 }
 let timeId: TimeoutHandle
 export const useAppStore = defineStore({
@@ -33,7 +35,8 @@ export const useAppStore = defineStore({
     darkMode: undefined,
     pageLoading: false,
     projectConfig: Persistent.getLocal(PROJ_CFG_KEY),
-    beforeMiniInfo: {}
+    beforeMiniInfo: {},
+    componentSize: 'middle'
   }),
   getters: {
     getPageLoading(): boolean {
@@ -62,6 +65,9 @@ export const useAppStore = defineStore({
     },
     getMultiTabsSetting(): MultiTabsSetting {
       return this.getProjectConfig.multiTabsSetting
+    },
+    getComponentSize(): AppSizeType | undefined {
+      return this.componentSize
     }
   },
   actions: {
@@ -98,6 +104,9 @@ export const useAppStore = defineStore({
         this.setPageLoading(loading)
         clearTimeout(timeId)
       }
+    },
+    setComponentSize(size: AppSizeType): void {
+      this.componentSize = size
     }
   }
 })
