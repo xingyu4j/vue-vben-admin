@@ -55,7 +55,7 @@
   </li>
 </template>
 <script setup lang="ts" name="SubMenu">
-import type { CSSProperties, PropType } from 'vue'
+import type { CSSProperties } from 'vue'
 import type { SubMenuProvider } from './types'
 import { computed, unref, getCurrentInstance, reactive, provide, onBeforeMount, inject } from 'vue'
 import { useDesign } from '@/hooks/web/useDesign'
@@ -63,7 +63,6 @@ import { propTypes } from '@/utils/propTypes'
 import { useMenuItem } from './useMenu'
 import { useSimpleRootMenuContext } from './useSimpleMenuContext'
 import { CollapseTransition } from '@/components/Transition'
-import Icon from '@/components/Icon'
 import { Popover } from 'ant-design-vue'
 import { isBoolean, isObject } from '@/utils/is'
 import mitt from '@/utils/mitt'

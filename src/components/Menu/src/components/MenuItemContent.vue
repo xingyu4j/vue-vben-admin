@@ -6,7 +6,6 @@
 </template>
 <script setup lang="ts" name="MenuItemContent">
 import { computed } from 'vue'
-import Icon from '@/components/Icon/index'
 import { useI18n } from '@/hooks/web/useI18n'
 import { useDesign } from '@/hooks/web/useDesign'
 import { contentProps } from '../props'

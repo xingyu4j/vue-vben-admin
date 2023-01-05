@@ -6,7 +6,6 @@
 </template>
 <script setup lang="ts" name="SettingButton">
 import SettingDrawer from './SettingDrawer'
-import Icon from '@/components/Icon'
 import { useDrawer } from '@/components/Drawer'
 
 const [register, { openDrawer }] = useDrawer()

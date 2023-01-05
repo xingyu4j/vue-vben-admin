@@ -33,17 +33,7 @@
   </div>
 </template>
 <script setup lang="ts" name="PageWrapper" inheritAttrs="false">
-import {
-  computed,
-  watch,
-  ref,
-  unref,
-  CSSProperties,
-  PropType,
-  provide,
-  useSlots,
-  useAttrs
-} from 'vue'
+import { computed, watch, ref, unref, CSSProperties, provide, useSlots, useAttrs } from 'vue'
 import PageFooter from './PageFooter.vue'
 import { useDesign } from '@/hooks/web/useDesign'
 import { propTypes } from '@/utils/propTypes'
@@ -61,7 +51,7 @@ const props = defineProps({
     type: Object as PropType<CSSProperties>
   },
   contentBackground: propTypes.bool,
-  contentFullHeight: propTypes.bool,
+  contentFullHeight: propTypes.bool.def(false),
   contentClass: propTypes.string,
   fixedHeight: propTypes.bool,
   upwardSpace: propTypes.oneOfType([propTypes.number, propTypes.string]).def(0)
