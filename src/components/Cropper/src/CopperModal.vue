@@ -129,11 +129,12 @@ const props = defineProps({
   circled: { type: Boolean, default: true },
   uploadApi: {
     type: Function as PropType<(params: apiFunParams) => Promise<any>>
-  }
+  },
+  src: { type: String }
 })
 
 let filename = ''
-const src = ref('')
+const src = ref(props.src || '')
 const previewSource = ref('')
 const cropper = ref<Cropper>()
 let scaleX = 1

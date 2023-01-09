@@ -30,7 +30,7 @@ const props = {
     default: false
   },
   imageList: {
-    type: [Array] as PropType<string[]>,
+    type: Array as PropType<string[]>,
     default: null
   },
   index: {
