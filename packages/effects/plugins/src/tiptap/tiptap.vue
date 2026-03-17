@@ -21,6 +21,8 @@ import Preview from './preview.vue';
 import { createToolbarGroups } from './toolbar';
 import { useTiptapToolbar } from './use-tiptap-toolbar';
 
+import './style.css';
+
 const props = withDefaults(defineProps<TipTapProps>(), {
   editable: true,
   extensions: undefined,

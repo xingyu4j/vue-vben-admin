@@ -5,6 +5,8 @@ import { computed } from 'vue';
 
 import { cn } from '@vben-core/shared/utils';
 
+import './style.css';
+
 const props = withDefaults(defineProps<TipTapPreviewProps>(), {
   content: '',
   minHeight: 160,
