@@ -42,7 +42,6 @@
     "@tiptap/extension-underline": "catalog:",
     "@tiptap/starter-kit": "catalog:",
     "@tiptap/vue-3": "catalog:",
-    "@vben-core/design": "workspace:*",
     "@vben-core/form-ui": "workspace:*",
     "@vben-core/popup-ui": "workspace:*",
     "@vben-core/shadcn-ui": "workspace:*",

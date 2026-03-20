@@ -1812,9 +1812,6 @@ importers:
       '@tiptap/vue-3':
         specifier: 'catalog:'
         version: 3.20.4(@floating-ui/dom@1.7.6)(@tiptap/core@3.20.4(@tiptap/pm@3.20.4))(@tiptap/pm@3.20.4)(vue@3.5.30(typescript@5.9.3))
-      '@vben-core/design':
-        specifier: workspace:*
-        version: link:../../@core/base/design
       '@vben-core/form-ui':
         specifier: workspace:*
         version: link:../../@core/ui-kit/form-ui
