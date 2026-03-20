@@ -244,7 +244,6 @@ onBeforeUnmount(() => {
             :disabled="!canRunAction(action)"
             :tooltip="action.label"
             tooltip-side="top"
-            variant="ghost"
             @click="runAction(action)"
           >
             <component :is="action.icon" class="size-4" />
@@ -284,7 +283,7 @@ onBeforeUnmount(() => {
       :title="$t('ui.tiptap.toolbar.preview')"
       class="w-4/5"
     >
-      <Preview :content="previewContent" :min-height="320" variant="plain" />
+      <Preview :content="previewContent" :min-height="320" />
     </PreviewModal>
   </div>
 </template>

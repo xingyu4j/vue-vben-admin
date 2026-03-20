@@ -133,18 +133,18 @@ export function useTiptapToolbar(options: UseTiptapToolbarOptions) {
       'enabled:hover:-translate-y-px enabled:hover:border-border disabled:opacity-45',
       'enabled:hover:bg-accent enabled:hover:text-foreground',
       isActionActive(action) &&
-        'border-primary/30 bg-[linear-gradient(180deg,hsl(var(--primary)/0.18)_0%,hsl(var(--primary)/0.1)_100%)] text-primary shadow-[inset_0_0_0_1px_hsl(var(--primary)/0.18)]',
+        'border-primary/30 bg-accent text-primary shadow-primary',
     );
   }
 
   function getPaletteSwatchClass(action: ToolbarAction, color: string) {
     return cn(
       'inline-flex size-8 items-center justify-center rounded-full border border-border',
-      'shadow-[inset_0_0_0_1px_rgb(255_255_255/0.1)]',
+      'shadow-accent',
       'transition-[transform,box-shadow,border-color] duration-200 ease-out',
       'hover:-translate-y-px hover:scale-[1.04]',
       getPaletteCurrentColor(action) === color &&
-        'border-primary shadow-[0_0_0_1px_hsl(var(--primary)/0.3),inset_0_0_0_1px_rgb(255_255_255/0.22)]',
+        'border-primary shadow-primary',
     );
   }
 

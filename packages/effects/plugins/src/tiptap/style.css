@@ -1,4 +1,4 @@
-@reference "@vben-core/design/theme";
+@reference "@vben/tailwind-config/theme";
 
 .vben-tiptap-content > * + * {
   @apply mt-3;
