@@ -4,7 +4,6 @@
 
 - 如果你想向项目贡献代码，请确保你的代码符合项目的代码规范。
 - 如果你使用的是 `vscode`，需要安装以下插件：
-  - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) - 脚本代码检查
   - [Oxc](https://marketplace.visualstudio.com/items?itemName=oxc.oxc-vscode) - Oxlint / Oxfmt 集成
   - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) - 单词语法检查
   - [Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint) - CSS 格式检查
@@ -28,8 +27,7 @@
 项目内集成了以下几种代码校验工具：
 
 - [Oxfmt](https://oxc.rs/docs/guide/usage/formatter.html) 用于代码格式化
-- [Oxlint](https://oxc.rs/docs/guide/usage/linter.html) 用于 JavaScript / TypeScript 代码检查
-- [ESLint](https://eslint.org/) 用于 Vue、JSONC、YAML 等规则检查
+- [Oxlint](https://oxc.rs/docs/guide/usage/linter.html) 用于 JavaScript / TypeScript / Vue 代码检查
 - [Stylelint](https://stylelint.io/) 用于 CSS 样式检查
 - [Commitlint](https://commitlint.js.org/) 用于检查 git 提交信息的规范
 - [Publint](https://publint.dev/) 用于检查 npm 包的规范
@@ -65,20 +63,6 @@ pnpm oxlint --fix
 ### 配置
 
 Oxlint 的核心配置位于 `internal/lint-configs/oxlint-config` 目录下，根目录入口文件为 `oxlint.config.ts`。
-
-## ESLint
-
-ESLint 用于补充 Vue、JSONC、YAML 等规则检查。
-
-### 命令
-
-```bash
-pnpm eslint . --cache
-```
-
-### 配置
-
-ESLint 配置文件为 `eslint.config.mjs`，其核心配置放在 `internal/lint-configs/eslint-config` 目录下，可以根据项目需求进行修改。
 
 ## Stylelint
 
@@ -216,7 +200,7 @@ pre-commit:
   parallel: true
   commands:
     lint-js:
-      run: pnpm oxfmt {staged_files} && pnpm oxlint --fix {staged_files} && pnpm eslint --cache --fix {staged_files}
+      run: pnpm oxfmt {staged_files} && pnpm oxlint --fix {staged_files}
       glob: '*.{js,jsx,ts,tsx}'
 ```
 

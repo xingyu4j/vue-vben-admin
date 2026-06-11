@@ -4,7 +4,6 @@
 
 - If you want to contribute code to the project, please ensure your code complies with the project's coding standards.
 - If you are using `vscode`, you need to install the following plugins:
-  - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) - Script code checking
   - [Oxc](https://marketplace.visualstudio.com/items?itemName=oxc.oxc-vscode) - Oxlint / Oxfmt integration
   - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) - Word syntax checking
   - [Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint) - CSS formatting
@@ -28,8 +27,7 @@ The project's configuration files are located in `internal/lint-configs`, where 
 The project integrates the following code verification tools:
 
 - [Oxfmt](https://oxc.rs/docs/guide/usage/formatter.html) for code formatting
-- [Oxlint](https://oxc.rs/docs/guide/usage/linter.html) for JavaScript / TypeScript linting
-- [ESLint](https://eslint.org/) for Vue, JSONC, YAML, and related rules
+- [Oxlint](https://oxc.rs/docs/guide/usage/linter.html) for JavaScript / TypeScript / Vue linting
 - [Stylelint](https://stylelint.io/) for CSS style checking
 - [Commitlint](https://commitlint.js.org/) for checking the standard of git commit messages
 - [Publint](https://publint.dev/) for checking the standard of npm packages
@@ -65,20 +63,6 @@ pnpm oxlint --fix
 ### Configuration
 
 The core Oxlint configuration is located in `internal/lint-configs/oxlint-config`, and the root entry file is `oxlint.config.ts`.
-
-## ESLint
-
-ESLint is used to complement Vue, JSONC, YAML, and related rules.
-
-### Command
-
-```bash
-pnpm eslint . --cache
-```
-
-### Configuration
-
-The ESLint configuration file is `eslint.config.mjs`, with its core configuration located in the `internal/lint-configs/eslint-config` directory, which can be modified according to project needs.
 
 ## Stylelint
 
@@ -216,7 +200,7 @@ pre-commit:
   parallel: true
   commands:
     lint-js:
-      run: pnpm oxfmt {staged_files} && pnpm oxlint --fix {staged_files} && pnpm eslint --cache --fix {staged_files}
+      run: pnpm oxfmt {staged_files} && pnpm oxlint --fix {staged_files}
       glob: '*.{js,jsx,ts,tsx}'
 ```
 

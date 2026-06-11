@@ -14,12 +14,10 @@
 │   └── web-tdesign # 基于 TDesign 的前端应用
 ├── cspell.json # CSpell 配置文件
 ├── docs # 项目文档目录
-├── eslint.config.mjs # ESLint 配置文件
 ├── lefthook.yml # Git Hook 配置文件
 ├── internal # 内部工具目录
 │   ├── lint-configs # 代码检查配置
 │   │   ├── commitlint-config # Commitlint 配置
-│   │   ├── eslint-config # ESLint 配置
 │   │   ├── oxfmt-config # Oxfmt 配置
 │   │   ├── oxlint-config # Oxlint 配置
 │   │   └── stylelint-config # Stylelint 配置

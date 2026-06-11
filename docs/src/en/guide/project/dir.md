@@ -14,12 +14,10 @@ The repository uses Monorepo management, and the project structure is as follows
 │   └── web-tdesign # Frontend application based on TDesign
 ├── cspell.json # CSpell configuration file
 ├── docs # Project documentation directory
-├── eslint.config.mjs # ESLint configuration file
 ├── lefthook.yml # Git hook configuration file
 ├── internal # Internal tools directory
 │   ├── lint-configs # Code linting configurations
 │   │   ├── commitlint-config # Commitlint configuration
-│   │   ├── eslint-config # ESLint configuration
 │   │   ├── oxfmt-config # Oxfmt configuration
 │   │   ├── oxlint-config # Oxlint configuration
 │   │   └── stylelint-config # Stylelint configuration

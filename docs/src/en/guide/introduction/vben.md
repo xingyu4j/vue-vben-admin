@@ -20,7 +20,7 @@
 - **Dynamic Menu**: Supports dynamic menus that can display based on permissions.
 - **Mock Data**: High-performance local Mock data solution based on `Nitro`.
 - **Rich Components**: Provides a wide range of components to meet most business needs.
-- **Standardization**: Code quality is ensured with tools like `Oxfmt`, `Oxlint`, `ESLint`, `Stylelint`, `Publint`, and `CSpell`.
+- **Standardization**: Code quality is ensured with tools like `Oxfmt`, `Oxlint`, `Stylelint`, `Publint`, and `CSpell`.
 - **Engineering**: Development efficiency is improved with tools like `Pnpm Monorepo`, `Turborepo`, and `Changeset`.
 - **Multi-UI Library Support**: Supports mainstream UI libraries like `Ant Design Vue`, `Ant Design Vue Next`, `Element Plus`, `Naive UI`, and `TDesign`, without being restricted to a specific framework.
 
