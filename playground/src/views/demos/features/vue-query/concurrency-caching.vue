@@ -53,8 +53,10 @@ const [Form] = useVbenForm({
 <template>
   <div>
     <div class="mb-2 flex gap-2">
-      <div>以下{{ count }}个组件共用一个数据源。</div>
-      <div>缓存更新时间：{{ new Date(dataUpdatedAt).toLocaleString() }}</div>
+      <ClientOnly>
+        <div>以下{{ count }}个组件共用一个数据源。</div>
+        <div>缓存更新时间：{{ new Date(dataUpdatedAt).toLocaleString() }}</div>
+      </ClientOnly>
     </div>
     <Form />
   </div>

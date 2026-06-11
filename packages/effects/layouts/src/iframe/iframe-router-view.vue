@@ -77,6 +77,7 @@ function showSpinning(index: number) {
         <VbenSpinner :spinning="showSpinning(index)" />
         <iframe
           :src="item.meta.iframeSrc as string"
+          :title="(item.name || item.meta.title || 'iframe') as string"
           class="size-full"
           @load="hideLoading(index)"
         ></iframe>

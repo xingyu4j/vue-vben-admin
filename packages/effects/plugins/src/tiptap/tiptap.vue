@@ -23,6 +23,7 @@ import { createToolbarGroups } from './toolbar';
 import { useTiptapToolbar } from './use-tiptap-toolbar';
 
 import './style.css';
+
 const props = withDefaults(defineProps<TipTapProps>(), {
   editable: true,
   extensions: undefined,
@@ -49,7 +50,7 @@ const contentMaxHeight = computed(() =>
 );
 const tiptapContentClass = cn(
   'vben-tiptap-content vben-tiptap__content',
-  'text-foreground max-h-(--vben-tiptap-max-height) min-h-(--vben-tiptap-min-height) overflow-auto leading-7 outline-none',
+  'max-h-(--vben-tiptap-max-height) min-h-(--vben-tiptap-min-height) overflow-auto leading-7 text-foreground outline-none',
 );
 const blobUrlTracker = new Set<string>();
 const editor = useEditor({

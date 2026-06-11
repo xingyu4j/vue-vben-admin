@@ -100,6 +100,7 @@ const handleClear = () => {
                   <img
                     :src="item.avatar"
                     class="aspect-square size-full object-cover"
+                    alt=""
                   />
                 </span>
                 <div class="flex flex-col gap-1 leading-none">
