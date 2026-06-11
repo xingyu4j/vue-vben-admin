@@ -20,7 +20,7 @@ async function getStagedFiles(): Promise<string[]> {
       '-z',
     ]);
 
-    let changedList = stdout ? stdout.replace(/\0$/, '').split('\0') : [];
+    let changedList = stdout ? stdout.split('\0').filter(Boolean) : [];
     changedList = changedList.map((item) => path.resolve(process.cwd(), item));
     const changedSet = new Set(changedList);
     changedSet.delete('');

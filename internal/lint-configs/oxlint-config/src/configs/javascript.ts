@@ -41,7 +41,7 @@ const javascript: OxlintConfig = {
     'no-caller': 'error',
     'no-case-declarations': 'error',
     'no-console': ['error', { allow: ['warn', 'error'] }],
-    'no-control-regex': 'off',
+    'no-control-regex': 'error',
     'no-debugger': 'error',
     'no-empty': ['error', { allowEmptyCatch: true }],
     'no-fallthrough': 'error',
@@ -125,6 +125,54 @@ const javascript: OxlintConfig = {
     ],
     'vars-on-top': 'error',
     yoda: ['error', 'never'],
+
+    // 说明:eslint 另有 dot-notation、no-restricted-syntax(禁 const enum 等)、
+    // no-unreachable-loop、one-var、spaced-comment 等,oxlint 暂不支持,无法迁移。
+    'no-restricted-properties': [
+      'error',
+      {
+        message:
+          'Use `Object.getPrototypeOf` or `Object.setPrototypeOf` instead.',
+        property: '__proto__',
+      },
+      {
+        message: 'Use `Object.defineProperty` instead.',
+        property: '__defineGetter__',
+      },
+      {
+        message: 'Use `Object.defineProperty` instead.',
+        property: '__defineSetter__',
+      },
+      {
+        message: 'Use `Object.getOwnPropertyDescriptor` instead.',
+        property: '__lookupGetter__',
+      },
+      {
+        message: 'Use `Object.getOwnPropertyDescriptor` instead.',
+        property: '__lookupSetter__',
+      },
+    ],
+    'object-shorthand': [
+      'error',
+      'always',
+      {
+        avoidQuotes: true,
+        ignoreConstructors: false,
+      },
+    ],
+    'prefer-arrow-callback': [
+      'error',
+      {
+        allowNamedFunctions: false,
+        allowUnboundThis: true,
+      },
+    ],
+    'prefer-regex-literals': [
+      'error',
+      {
+        disallowRedundantWrapping: true,
+      },
+    ],
   },
 };
 
