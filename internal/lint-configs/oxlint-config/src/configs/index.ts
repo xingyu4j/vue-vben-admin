@@ -9,6 +9,7 @@ import { importPluginConfig } from './import';
 import { javascript } from './javascript';
 import { node } from './node';
 import { overrides } from './overrides';
+import { perfectionist } from './perfectionist';
 import { plugins } from './plugins';
 import { tailwindcss } from './tailwindcss';
 import { test } from './test';
@@ -69,6 +70,7 @@ const oxlintConfig = defineOxlintConfig(
     importPluginConfig,
     node,
     overrides,
+    perfectionist,
     tailwindcss,
     test,
     typescript,
@@ -87,6 +89,7 @@ export {
   node,
   overrides,
   oxlintConfig,
+  perfectionist,
   plugins,
   tailwindcss,
   test,

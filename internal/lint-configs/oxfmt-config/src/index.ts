@@ -8,6 +8,12 @@ const oxfmtConfig: OxfmtConfig = defineOxfmtConfig({
   semi: true,
   singleQuote: true,
   sortPackageJson: false,
+  // 暂时关闭，改动较多，后续可以考虑开启，支持vue与现有的eslint-plugin-better-tailwindcss会冲突
+  // sortTailwindcss: {
+  //   functions: ['clsx', 'cn', 'cva', 'tw'],
+  //   stylesheet: './internal/tailwind-config/src/theme.css',
+  //   preserveWhitespace: true,
+  // },
   trailingComma: 'all',
   overrides: [
     {
