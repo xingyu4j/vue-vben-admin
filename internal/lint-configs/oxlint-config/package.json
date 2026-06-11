@@ -30,6 +30,8 @@
     "@eslint-community/eslint-plugin-eslint-comments": "catalog:",
     "eslint-plugin-better-tailwindcss": "catalog:",
     "eslint-plugin-command": "catalog:",
-    "oxlint": "catalog:"
+    "eslint-plugin-perfectionist": "catalog:",
+    "oxlint": "catalog:",
+    "oxlint-plugin-vize": "catalog:"
   }
 }
