@@ -1,7 +1,16 @@
 import type { OxlintConfig } from 'oxlint';
 
 const plugins: OxlintConfig = {
-  plugins: ['import', 'node', 'oxc', 'typescript', 'unicorn', 'vitest', 'vue'],
+  plugins: [
+    'eslint',
+    'unicorn',
+    'typescript',
+    'oxc',
+    'import',
+    'vitest',
+    'node',
+    'vue',
+  ],
 };
 
 export { plugins };
