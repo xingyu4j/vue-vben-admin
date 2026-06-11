@@ -33,10 +33,6 @@
       "path": "internal/lint-configs/commitlint-config"
     },
     {
-      "name": "@vben/eslint-config",
-      "path": "internal/lint-configs/eslint-config"
-    },
-    {
       "name": "@vben/oxfmt-config",
       "path": "internal/lint-configs/oxfmt-config"
     },

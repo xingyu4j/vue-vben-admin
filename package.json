@@ -71,7 +71,6 @@
     "@tsdown/css": "catalog:",
     "@types/node": "catalog:",
     "@vben/commitlint-config": "workspace:*",
-    "@vben/eslint-config": "workspace:*",
     "@vben/oxfmt-config": "workspace:*",
     "@vben/oxlint-config": "workspace:*",
     "@vben/stylelint-config": "workspace:*",
@@ -84,7 +83,6 @@
     "@vitejs/plugin-vue-jsx": "catalog:",
     "cross-env": "catalog:",
     "cspell": "catalog:",
-    "eslint": "catalog:",
     "happy-dom": "catalog:",
     "is-ci": "catalog:",
     "lefthook": "catalog:",
@@ -106,5 +104,5 @@
     "node": "^22.18.0 || ^24.0.0",
     "pnpm": ">=11.0.0"
   },
-  "packageManager": "pnpm@11.5.2"
+  "packageManager": "pnpm@11.5.3"
 }

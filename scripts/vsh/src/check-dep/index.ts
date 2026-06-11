@@ -18,7 +18,6 @@ const DEFAULT_CONFIG = {
     '@iconify/json',
     '@vben-core/design',
     '@vben/commitlint-config',
-    '@vben/eslint-config',
     '@vben/stylelint-config',
     '@vben/tailwind-config',
     '@vben/vite-config',
